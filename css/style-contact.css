@@ -1,0 +1,119 @@
+main {
+  background-image: url(../img/works_bg.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+h2 {
+  margin-bottom: 20px;
+}
+/* contact */
+.contact {
+  margin: 0 auto; /*中央寄せ*/
+  padding: 100px 80px;
+  font-size: 1.125rem;
+}
+.contact p {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.contact-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-item,
+.contact-body {
+  padding: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contact-item {
+  text-align: left;
+  width: 30%;
+}
+
+.contact-body {
+  width: 70%;
+}
+
+.contact-type {
+  display: block;
+}
+
+.contact-type + .contact-type {
+  margin-top: 10px;
+}
+
+.contact-type-txt {
+  margin-left: 5px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.form-text,
+.form-textarea {
+  border: 1px solid;
+  width: 100%;
+}
+.required {
+  border-radius: 50px;
+  background-color: #fd6b6b;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 2px 5px;
+  text-align: center;
+}
+
+.contact-submit {
+  width: 250px;
+  background-color: #803a36;
+  color: #fff;
+  font-weight: bold;
+  display: block; /* インライン要素をブロック要素に変更 */
+  margin: 0 auto; /* 中央寄せ */
+  font-size: 16px; /* 文字の大きさ */
+  padding: 15px; /* 内側の余白 */
+  border-radius: 100vh; /* 角丸指定 */
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  height: 114px;
+  width: 100%;
+  background-color: #eee0c9;
+  text-align: center;
+}
+footer p {
+  line-height: 114px;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    /* 16 / 650 * 100 */
+    font-size: 2.46vw;
+  }
+  .contact {
+    padding: 100px 60px;
+  }
+  .contact-item {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .contact-body {
+    display: block;
+    width: 100%;
+  }
+}

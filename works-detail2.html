@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/works-detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/be9648ab57.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <title>Saya Kagaya Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <h1>
+          <a href="index.html">
+            <img src="img/favicon.png" alt="logo" class="logo" />
+          </a>
+        </h1>
+        <nav class="header-nav" id="js-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#works">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#service">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <div class="hd-contact-area">
+                <a href="contact.html" class="hd-contact-btn">
+                  <span>COTNTACT</span>
+                  <span class="mail-icon">
+                    <i class="fas fa-envelope"></i> </span
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="humberger">
+          <span></span>
+          <span>Menu</span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">
+              <img src="img/favicon.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="index.html#about" class="link">ABOUT</a>
+          </li>
+          <li>
+            <a href="works.html" class="link">WORKS</a>
+          </li>
+          <li>
+            <a href="index.html#service" class="link">SERVICE</a>
+          </li>
+          <li>
+            <div class="sidebar-contact-area">
+              <a href="contact.html">
+                <span>COTNTACT</span>
+                <span class="mail-icon"> <i class="fas fa-envelope"></i> </span
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="works-detail">
+        <div class="detail">
+          <h2>株式会社LIG 架空採用サイト</h2>
+          <p class="url">
+            <a href="#">https://www.google.com/</a>
+          </p>
+
+          <table class="work-detail">
+            <tr>
+              <th class="work-item">制作期間：</th>
+              <td class="work-body">1ヶ月</td>
+            </tr>
+            <tr>
+              <th class="work-item">使用ツール：</th>
+              <td class="work-body">Photoshop/XD</td>
+            </tr>
+            <tr>
+              <th class="work-item">使用言語：</th>
+              <td class="work-body">HTML/CSS/jQuery</td>
+            </tr>
+            <tr>
+              <th class="work-item">概要：</th>
+              <td class="work-body">
+                新潟にあるレストラン「禅」様のサイトリニューアル
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="scroll">
+          <span>
+            <img src="img/zen_top_pc.jpg" alt="" class="link-img" />
+          </span>
+        </div>
+        <div class="category">
+          <span class="design">Design</span>
+          <span class="cording">Cording</span>
+        </div>
+        <a href="#" class="works-btn btn">制作実績一覧へ</a>
+
+        <!-- Slider main container -->
+        <div class="swiper-wrap">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sample2.jpg" alt="" />
+                  <p>株式会社LIGの架空サイト</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sample3.jpg" alt="" />
+                  <p>架空美容室のWebサイト</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sample4.jpg" alt="" />
+                  <p>WebデザインスクールのLP①</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sample5.jpg" alt="" />
+                  <p>WebデザインスクールのLP②</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sample6.jpg" alt="" />
+                  <p>ゲーミングチェア販促用のLP</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>All Rights Reserved 2024 ©︎ Saya Kagaya</p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/works-deital.js"></script>
+</html>

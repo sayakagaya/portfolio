@@ -1,0 +1,108 @@
+/* price*/
+.price_area {
+  margin: 0 auto;
+}
+.price_table td {
+  text-align: center;
+  /* background-color: #fff; */
+  padding: 10px;
+  position: relative;
+}
+.price_table td::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.price_table th,
+.price_table td {
+  width: 400px;
+  height: 80px;
+}
+.price span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e34c78;
+}
+.plan_light,
+.plan_standard,
+.plan_premium {
+  border-radius: 50px 50px 0px 0px; /* 左上、右上、右下、左下 */
+}
+.plan_light {
+  background-color: #f7f7b5;
+}
+.plan_standard {
+  background-color: #efd1f9;
+}
+.plan_premium {
+  background-color: #bfd4ea;
+}
+.item {
+  position: relative;
+  background-color: #dbd9d3;
+  border-radius: 20px 0px 0px 20px; /* 左上、右上、右下、左下 */
+}
+.light,
+.standard,
+.premium {
+  background-color: #fff;
+}
+.light::after {
+  border-bottom: 2px dotted #d4d44b;
+}
+.standard::after {
+  border-bottom: 2px dotted #e3a4f8;
+}
+.premium::after {
+  border-bottom: 2px dotted #71b0ee;
+}
+.reccomend_light {
+  background-color: #fbfbe8;
+}
+.reccomend_standard {
+  background-color: #f3ebf6;
+}
+.reccomend_premium {
+  background-color: #dde4ec;
+}
+.osusume {
+  position: relative;
+  margin-bottom: 5px;
+}
+.osusume::before {
+  display: inline;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f715";
+  font-size: 0.75rem;
+  left: 10px;
+  bottom: 0;
+}
+.osusume::after {
+  display: inline;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f715";
+  font-size: 0.75rem;
+  right: 10px;
+  bottom: 0;
+  transform: scale(-1, 1);
+}
+.reccomend_light .osusume {
+  color: #b3b313;
+  font-weight: bold;
+}
+.reccomend_standard .osusume {
+  color: #d069f2;
+  font-weight: bold;
+}
+.reccomend_premium .osusume {
+  color: #3a91e7;
+  font-weight: bold;
+}

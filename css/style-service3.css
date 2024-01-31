@@ -1,0 +1,26 @@
+/* plan */
+.price_table {
+  border-spacing: 0;
+  border: 5px solid #f3cceb;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+}
+.price_table th,
+.price_table td {
+  width: 250px;
+  height: 50px;
+}
+
+.price_table td span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e34c78;
+}
+.repletion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

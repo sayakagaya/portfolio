@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/be9648ab57.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/favicon.png" />
+
+    <title>Saya Kagaya Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <h1>
+          <a href="index.html">
+            <img src="img/favicon.png" alt="logo" class="logo" />
+          </a>
+        </h1>
+        <nav class="header-nav" id="js-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#works">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#service">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <div class="hd-contact-area">
+                <a href="contact.html" class="hd-contact-btn">
+                  <span>COTNTACT</span>
+                  <span class="mail-icon">
+                    <i class="fas fa-envelope"></i> </span
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="humberger">
+          <span></span>
+          <span>Menu</span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">
+              <img src="img/favicon.png" alt="" />
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="link">ABOUT</a>
+          </li>
+          <li>
+            <a href="works.html" class="link">WORKS</a>
+          </li>
+          <li>
+            <a href="index.html#service" class="link">SERVICE</a>
+          </li>
+          <li>
+            <div class="sidebar-contact-area">
+              <a href="contact.html">
+                <span>COTNTACT</span>
+                <span class="mail-icon"> <i class="fas fa-envelope"></i> </span
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="mv">
+        <div class="layout updown">
+          <img src="img/cloud.png" alt="雲" class="cloud" />
+        </div>
+
+        <img src="img/house.png" alt="家" class="house" />
+        <div class="car_animation">
+          <div class="gata-gata">
+            <img src="img/car.png" alt="車" class="car" />
+          </div>
+        </div>
+        <div class="site-title">
+          <p class="main">Saya Kagaya</p>
+          <p class="sub">PORTFOLIO</p>
+        </div>
+      </section>
+
+      <section class="fade" id="about">
+        <div class="about_img_container">
+          <img src="img/face.png" alt="自己紹介写真" />
+        </div>
+        <div class="about_txt">
+          <h2>
+            <span class="en-title">About</span>
+            <span class="jp-title">私について</span>
+          </h2>
+          <p>
+            生まれも育ちも大阪の29歳です。
+            <br /><br />
+            前職は医療系システムのプログラマーとして７年ほど働いてきましたが、
+            誰が対応しても同じというような企業の１社員としての仕事ではなく、
+            「自分のアイデアを形にできる」Webデザインのお仕事に興味があり
+            学び始めました。
+            <br /><br />
+            私の作ったデザインを通して
+            お客さまの問題が解決できるような、ご満足いただけるWebサイト制作の
+            お手伝いをさせていただきたいです。
+          </p>
+        </div>
+      </section>
+      <section class="fade" id="works">
+        <h2 class="works-title">
+          <span class="en-title">Works</span>
+          <span class="jp-title">制作実績</span>
+        </h2>
+        <div class="container">
+          <ul class="works-list">
+            <li class="works-item">
+              <a href="works-detail1.html">
+                <div class="works-imgbox">
+                  <img
+                    src="img/sample1.jpg"
+                    alt="制作実績1"
+                    class="works-img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
+                <span class="cording">Cording</span>
+              </div>
+              <p>和食レストランのWebサイト</p>
+            </li>
+            <li class="works-item">
+              <a href="#">
+                <div class="works-imgbox">
+                  <img
+                    src="img/sample2.jpg"
+                    alt="制作実績2"
+                    class="works-img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
+              </div>
+              <p>株式会社LIGの架空サイト</p>
+            </li>
+            <li class="works-item">
+              <a href="#">
+                <div class="works-imgbox">
+                  <img
+                    src="img/sample3.jpg"
+                    alt="制作実績3"
+                    class="works-img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
+              </div>
+              <p>架空美容室のWebサイト</p>
+            </li>
+
+            <li class="works-item">
+              <a href="#">
+                <div class="works-imgbox">
+                  <img
+                    src="img/sample4.jpg"
+                    alt="制作実績4"
+                    class="works-img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
+              </div>
+              <p>WebデザインスクールのLP①</p>
+            </li>
+            <li class="works-item">
+              <a href="#">
+                <div class="works-imgbox">
+                  <img
+                    src="img/sample5.jpg"
+                    alt="制作実績5"
+                    class="works-img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
+              </div>
+              <p>WebデザインスクールのLP②</p>
+            </li>
+            <li class="works-item">
+              <a href="#">
+                <div class="works-imgbox">
+                  <img
+                    src="img/sample6.jpg"
+                    alt="制作実績6"
+                    class="works-img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
+              </div>
+              <p>ゲーミングチェア販促用のLP</p>
+            </li>
+          </ul>
+          <a href="works.html" class="works-btn btn">制作実績一覧を見る</a>
+        </div>
+      </section>
+      <section id="service">
+        <h2 class="service-title" id="service">
+          <span class="en-title">Service</span>
+          <span class="jp-title">サービス</span>
+        </h2>
+        <ul class="service-list">
+          <li class="service-item slideContsL slideConts">
+            <div class="service_img_container">
+              <img src="img/cording.svg" alt="" />
+            </div>
+            <div class="service-content">
+              <h3>ホームページ・Webサイト制作</h3>
+              <p>
+                お客さまの商品・サービスが持つ魅力を最大限に引き出すWebサイトを制作します。
+                PC・タブレット・スマホなど、マルチデバイスに対応したレスポンシブサイト制作も可能です。
+              </p>
+              <div class="detail">
+                <a href="service1.html" class="detail-btn btn">詳細はこちら</a>
+              </div>
+            </div>
+          </li>
+          <li class="service-item slideContsR slideConts">
+            <div class="service_img_container">
+              <img src="img/update.svg" alt="" />
+            </div>
+            <div class="service-content">
+              <h3>公開後の更新・運営サポート</h3>
+              <p>
+                Webサイトの更新を行いたくても、時間的・環境的・技術的にむずかしいお客さま向けに、更新サポートサービスも
+                承っています。
+              </p>
+              <a href="service2.html" class="detail-btn btn">詳細はこちら</a>
+            </div>
+          </li>
+          <li class="service-item slideContsL slideConts">
+            <div class="service_img_container">
+              <img src="img/design.svg" alt="" />
+            </div>
+            <div class="service-content">
+              <h3>ロゴ・バナー・広告制作</h3>
+              <p>
+                Instagram、LP、HPなどのバナー各種を制作いたします。
+                お客さまの商品をより魅力的にターゲットに訴求できるよう努めます。
+              </p>
+              <a href="service3.html" class="detail-btn btn">詳細はこちら</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="fade" id="contact">
+        <h2>
+          <span class="en-title">Contact</span>
+          <span class="jp-title">お問い合わせ</span>
+        </h2>
+        <span class="slash"><i class="fa-solid fa-slash"></i></span>
+        <p>
+          ホームページ制作に関するご相談や<br />
+          お見積もりのご依頼等はこちらから
+        </p>
+        <div class="slash backslash"><i class="fa-solid fa-slash"></i></div>
+        <a href="contact.html" class="contact-btn btn">
+          <div class="mail-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <span> お問い合わせ </span></a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p id="page-top"><a href="#">TOP</a></p>
+      <p class="copyright">All Rights Reserved 2024 ©︎ Saya Kagaya</p>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>
