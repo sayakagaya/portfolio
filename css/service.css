@@ -17,8 +17,11 @@ main {
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
 }
+h2 {
+  margin-bottom: 40px;
+}
 h3 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
   color: var(--serviceColor);
   text-align: center;
   margin-bottom: 40px;
@@ -51,17 +54,17 @@ h3 {
   object-fit: cover;
 }
 
-.service-textarea {
+.service_textarea {
   width: 45%;
 }
-.service-category {
+.service_category {
   position: relative;
   font-size: 1.5rem;
   color: var(--serviceColor);
   margin-top: 40px;
   padding-bottom: 10px;
 }
-.service-category::after {
+.service_category::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -70,7 +73,7 @@ h3 {
   bottom: 0;
   left: 0;
 }
-.service-category-list {
+.service_category_list {
   list-style: disc;
   padding-top: 10px;
   padding-left: 20px;
@@ -78,14 +81,15 @@ h3 {
 /* price */
 .price_title {
   position: relative;
-  font-size: 1.5rem;
+  font-size: clamp(1.75rem, 1.523rem + 1.14vw, 2.375rem);
+  font-weight: bold;
   color: var(--serviceColor);
   padding-bottom: 20px;
   text-align: center;
 }
 
 /* flow */
-.flow-sec {
+.flow_sec {
   width: 100%;
   background-color: #fcf8b2;
   padding-top: 130px;
@@ -103,24 +107,27 @@ h4 {
   align-items: center;
 }
 
-.flow-list {
+.flow_list {
   padding-left: 0;
 }
 
-.flow-item {
+.flow_item {
   list-style-type: none;
   border: 2px solid #4d9bc1;
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
 }
+.flow_item.is-scrollIn {
+  animation: fade 0.3s forwards;
+}
 
-.flow-list li:not(:last-child) {
+.flow_list li:not(:last-child) {
   margin-bottom: 60px;
   position: relative;
 }
 
-.flow-list li:not(:last-child)::after {
+.flow_list li:not(:last-child)::after {
   content: "";
   position: absolute;
   border: 20px solid transparent;
@@ -134,7 +141,7 @@ h4 {
   border-top-color: var(--serviceColor);
 }
 
-.flow-item dl dt {
+.flow_item dl dt {
   font-size: 1.3em;
   font-weight: bold;
   border-bottom: 2pt dashed #ccc;
@@ -142,15 +149,15 @@ h4 {
   margin-bottom: 0.5em;
 }
 
-.flow-item .icon {
+.flow_item .icon {
   color: var(--serviceColor);
   margin-right: 0.5em;
 }
 
-.flow-item dl dd {
+.flow_item dl dd {
   margin: 0;
 }
-.contact-link {
+.contact_link {
   text-decoration: underline;
 }
 /* footer */
@@ -167,24 +174,24 @@ footer p {
 
 /* レスポンシブ */
 @media screen and (max-width: 650px) {
-  html {
-    /* 16 / 650 * 100 */
-    font-size: 2.46vw;
+  .header {
+    height: 0;
   }
-  h2{
+  h2 {
     margin-bottom: 20px;
   }
-  h3 {
-    font-size: 2rem;
+  h4 {
+    margin-bottom: 40px;
   }
   .service_container {
-    padding: 100px 60px 75px 60px;
+    padding: 60px 30px 75px 30px;
   }
+
   .outline_img_container {
     width: 60%;
     margin: 0 auto;
   }
-  .service-textarea {
+  .service_textarea {
     width: 100%;
   }
 }

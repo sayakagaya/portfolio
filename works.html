@@ -27,36 +27,35 @@
     <title>Saya Kagaya Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="header" id="js-header">
       <div class="header_container">
         <h1>
           <a href="index.html">
-            <img src="img/favicon.png" alt="logo" class="logo" />
+            <img src="img/top_logo.png" alt="logo" class="logo" />
           </a>
         </h1>
-        <nav class="header-nav" id="js-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
+        <nav class="header_nav" id="js-nav">
+          <ul class="nav_list">
+            <li class="nav_item">
               <a href="index.html#about">ABOUT</a>
             </li>
-            <li class="nav-item">
+            <li class="nav_item">
               <a href="works.html">WORKS</a>
             </li>
-            <li class="nav-item">
+            <li class="nav_item">
               <a href="index.html#service">SERVICE</a>
             </li>
-            <li class="nav-item">
-              <div class="hd-contact-area">
-                <a href="contact.html" class="hd-contact-btn">
+            <li class="nav_item">
+              <div class="hd_contact_area">
+                <a href="contact.html" class="hd_contact_btn">
                   <span>COTNTACT</span>
-                  <span class="mail-icon">
+                  <span class="mail_icon">
                     <i class="fas fa-envelope"></i> </span
                 ></a>
               </div>
             </li>
           </ul>
         </nav>
-
         <!-- ハンバーガーメニュー -->
         <div class="humberger">
           <span></span>
@@ -66,12 +65,13 @@
       </div>
 
       <div class="sidebar">
-        <ul class="sidebar-links">
+        <ul class="sidebar_links">
           <li>
             <a href="index.html">
               <img src="img/favicon.png" alt="" />
             </a>
           </li>
+
           <li>
             <a href="index.html#about" class="link">ABOUT</a>
           </li>
@@ -82,99 +82,124 @@
             <a href="index.html#service" class="link">SERVICE</a>
           </li>
           <li>
-            <div class="sidebar-contact-area">
+            <div class="sidebar_contact_area">
               <a href="contact.html">
                 <span>COTNTACT</span>
-                <span class="mail-icon"> <i class="fas fa-envelope"></i> </span
+                <span class="mail_icon"> <i class="fas fa-envelope"></i> </span
               ></a>
             </div>
           </li>
         </ul>
       </div>
     </header>
-
     <main>
       <div class="works">
-        <h2 class="works-title">
-          <span class="en-title">Works</span>
-          <span class="jp-title">制作実績</span>
+        <h2 class="works_title">
+          <span class="en_title">Works</span>
+          <span class="jp_title">制作実績</span>
         </h2>
-        <ul class="cat-list">
-          <li class="cat-item">All</li>
-          <li class="cat-item">Webデザイン</li>
-          <li class="cat-item">バナー・広告</li>
+        <ul class="filter_list">
+          <li data-filter="all" class="is-active"><span>All</span></li>
+          <li data-filter="cat1"><span>Webデザイン</span></li>
+          <li data-filter="cat2"><span>バナー・広告</span></li>
         </ul>
 
-        <ul class="works-list">
-          <li class="works-item">
-            <a href="works-detail1.html">
-              <div class="img_box">
-                <img src="img/sample1.jpg" alt="制作実績1" class="works-img" />
+        <div class="inner">
+          <ul class="works_list filter_item">
+            <li class="works_item" data-item="cat1 cat2">
+              <a href="works-detail1.html">
+                <div class="img_box">
+                  <img
+                    src="img/sample1.jpg"
+                    alt="制作実績1"
+                    class="works_img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
+                <span class="cording">Cording</span>
               </div>
-            </a>
-            <div class="category">
-              <span class="design">Design</span>
-              <span class="cording">Cording</span>
-            </div>
-            <p>和食レストランのWebサイト</p>
-          </li>
-          <li class="works-item">
-            <a href="#">
-              <div class="img_box">
-                <img src="img/sample2.jpg" alt="制作実績2" class="works-img" />
+              <p>和食レストランのWebサイト</p>
+            </li>
+            <li class="works_item" data-item="cat1">
+              <a href="#">
+                <div class="img_box">
+                  <img
+                    src="img/sample2.jpg"
+                    alt="制作実績2"
+                    class="works_img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
               </div>
-            </a>
-            <div class="category">
-              <span class="design">Design</span>
-            </div>
-            <p>株式会社LIGの架空サイト</p>
-          </li>
-          <li class="works-item">
-            <a href="#">
-              <div class="img_box">
-                <img src="img/sample3.jpg" alt="制作実績3" class="works-img" />
+              <p>株式会社LIGの架空サイト</p>
+            </li>
+            <li class="works_item" data-item="cat1">
+              <a href="#">
+                <div class="img_box">
+                  <img
+                    src="img/sample3.jpg"
+                    alt="制作実績3"
+                    class="works_img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
               </div>
-            </a>
-            <div class="category">
-              <span class="design">Design</span>
-            </div>
-            <p>架空美容室のWebサイト</p>
-          </li>
+              <p>架空美容室のWebサイト</p>
+            </li>
 
-          <li class="works-item">
-            <a href="#">
-              <div class="img_box">
-                <img src="img/sample4.jpg" alt="制作実績4" class="works-img" />
+            <li class="works_item" data-item="cat1">
+              <a href="#">
+                <div class="img_box">
+                  <img
+                    src="img/sample4.jpg"
+                    alt="制作実績4"
+                    class="works_img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
               </div>
-            </a>
-            <div class="category">
-              <span class="design">Design</span>
-            </div>
-            <p>WebデザインスクールのLP①</p>
-          </li>
-          <li class="works-item">
-            <a href="#">
-              <div class="img_box">
-                <img src="img/sample5.jpg" alt="制作実績5" class="works-img" />
+              <p>WebデザインスクールのLP①</p>
+            </li>
+            <li class="works_item" data-item="cat1">
+              <a href="#">
+                <div class="img_box">
+                  <img
+                    src="img/sample5.jpg"
+                    alt="制作実績5"
+                    class="works_img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
               </div>
-            </a>
-            <div class="category">
-              <span class="design">Design</span>
-            </div>
-            <p>WebデザインスクールのLP②</p>
-          </li>
-          <li class="works-item">
-            <a href="#">
-              <div class="img_box">
-                <img src="img/sample6.jpg" alt="制作実績6" class="works-img" />
+              <p>WebデザインスクールのLP②</p>
+            </li>
+            <li class="works_item" data-item="cat1">
+              <a href="#">
+                <div class="img_box">
+                  <img
+                    src="img/sample6.jpg"
+                    alt="制作実績6"
+                    class="works_img"
+                  />
+                </div>
+              </a>
+              <div class="category">
+                <span class="design">Design</span>
               </div>
-            </a>
-            <div class="category">
-              <span class="design">Design</span>
-            </div>
-            <p>ゲーミングチェア販促用のLP</p>
-          </li>
-        </ul>
+              <p>ゲーミングチェア販促用のLP</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
     <footer>

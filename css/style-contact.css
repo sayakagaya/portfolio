@@ -1,5 +1,5 @@
 main {
-  background-image: url(../img/works_bg.png);
+  background-image: url(../img/common_bg.png);
   height: 100%;
   background-size: cover;
   background-position: center top;
@@ -11,40 +11,41 @@ h2 {
 /* contact */
 .contact {
   margin: 0 auto; /*中央寄せ*/
-  padding: 100px 80px;
-  font-size: 1.125rem;
+  padding: 100px 35px;
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
 }
 .contact p {
   text-align: center;
-  margin-bottom: 90px;
 }
-.contact-table {
+.contact_table {
   width: 100%;
-  margin-bottom: 20px;
+  max-width: 880px;
+  margin: 50px auto 20px;
 }
-.contact-item,
-.contact-body {
+.contact_item,
+.contact_body {
   padding: 20px;
   border-bottom: 1px solid #e1e1e1;
 }
-.contact-item {
-  text-align: left;
+.contact_item {
+  text-align: center;
   width: 30%;
 }
 
-.contact-body {
+.contact_body {
   width: 70%;
+  text-align: left;
 }
 
-.contact-type {
+.contact_type {
   display: block;
 }
 
-.contact-type + .contact-type {
+.contact_type + .contact_type {
   margin-top: 10px;
 }
 
-.contact-type-txt {
+.contact_type_txt {
   margin-left: 5px;
 }
 input[type="checkbox"] {
@@ -53,8 +54,8 @@ input[type="checkbox"] {
   vertical-align: middle;
 }
 
-.form-text,
-.form-textarea {
+.form_text,
+.form_textarea {
   border: 1px solid;
   width: 100%;
 }
@@ -69,8 +70,9 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-.contact-submit {
-  width: 250px;
+.contact_submit {
+  max-width: 300px;
+  width: 50%;
   background-color: #803a36;
   color: #fff;
   font-weight: bold;
@@ -79,10 +81,6 @@ input[type="checkbox"] {
   font-size: 16px; /* 文字の大きさ */
   padding: 15px; /* 内側の余白 */
   border-radius: 100vh; /* 角丸指定 */
-  border: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
 }
 
@@ -99,20 +97,13 @@ footer p {
 }
 
 @media screen and (max-width: 650px) {
-  html {
-    /* 16 / 650 * 100 */
-    font-size: 2.46vw;
-  }
-  .contact {
-    padding: 100px 60px;
-  }
-  .contact-item {
+  .contact_item {
     display: block;
     width: 100%;
     padding: 0 20px;
+    text-align: left;
   }
-
-  .contact-body {
+  .contact_body {
     display: block;
     width: 100%;
   }

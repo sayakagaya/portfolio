@@ -1,13 +1,13 @@
 /* detail */
 main {
   height: 100%;
-  background-image: url(../img/works_bg.png);
+  background-image: url(../img/common_bg.png);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   padding-bottom: 80px;
 }
-.works-detail {
+.works_detail {
   padding: 30px 130px;
 }
 h2 {
@@ -20,17 +20,17 @@ h2 {
 .url {
   text-align: center;
 }
-.work-detail {
+.work_detail {
   width: 100%;
   margin-bottom: 30px;
 }
-.work-item {
+.work_item {
   width: 15%;
   text-align-last: justify;
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.work-body {
+.work_body {
   width: 85%;
   padding-bottom: 10px;
 }
@@ -39,7 +39,7 @@ h2 {
   overflow: auto;
   margin-bottom: 30px;
 }
-.link-img {
+.link_img {
   width: 100%;
 }
 
@@ -56,12 +56,12 @@ h2 {
   background-color: #8bc66f;
 }
 
-.works-btn {
+.works_btn {
   background-color: var(--mainColor);
   color: #fff;
   margin: 20px auto 50px auto;
 }
-.works-btn::after {
+.works_btn::after {
   display: inline;
   position: absolute;
   font-family: "Font Awesome 5 Free";

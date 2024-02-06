@@ -1,19 +1,21 @@
 main {
   height: 100%;
-  background-image: url(../img/works_bg.png);
+  background-image: url(../img/common_bg.png);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  padding-bottom: 80px;
   margin: 0 auto;
+  min-height: 100vh;
+}
+.works {
+  padding: 100px 35px;
 }
 
-.works-title {
-  padding-top: 96px;
+.works_title {
   position: relative;
   margin-bottom: 20px;
 }
-.cat-list {
+.filter_list {
   display: flex;
   justify-content: end;
   margin-right: 133px;
@@ -21,23 +23,26 @@ main {
   margin-bottom: 50px;
   gap: 20px;
 }
-.cat-item {
+.filter_list li {
   width: inherit;
   padding: 5px 20px;
   border-radius: 50px;
-  background-color: var(--mainColor);
+  background-color: #ab9488;
   color: #fff;
+  cursor: pointer;
+}
+.filter_list li.is-active {
+  /*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
+  background-color: var(--mainColor);
 }
 
-.works-list {
+.works_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 133px;
-  max-width: 100%;
   cursor: pointer;
 }
-.works-item {
+.works_item {
   width: calc((100% - 88px) / 3);
   margin-bottom: 40px;
 }
@@ -51,7 +56,7 @@ main {
   display: block;
   padding-top: 100%;
 }
-.works-img {
+.works_img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -63,7 +68,7 @@ main {
   border-radius: 30px;
   transition: 1s all;
 }
-.works-img:hover {
+.works_img:hover {
   transform: scale(1.1, 1.1);
   transition: 1s all;
 }
@@ -105,19 +110,15 @@ footer p {
 }
 
 @media screen and (max-width: 650px) {
-  html {
-    /* 16 / 650 * 100 */
-    font-size: 2.46vw;
-  }
-  .cat-list {
+  .cat_list {
     justify-content: center;
     margin: 0 auto 50px auto;
   }
-  .works-list {
-    margin: 0 80px;
+  .works_list {
     gap: 50px;
+    margin: 0;
   }
-  .works-item {
+  .works_item {
     width: 100%;
     margin: 0 auto;
   }

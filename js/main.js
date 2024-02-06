@@ -5,62 +5,113 @@ document.querySelector(".humberger").addEventListener("click", function () {
   sidebar.classList.toggle("active");
 });
 
+//ヘッダーの動作
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("#js-header");
+
+  window.addEventListener("scroll", function () {
+    //スクロール位置が0以上の時は背景色をつけ、高さを変更する
+    if (0 < window.scrollY) {
+      header.classList.add("active");
+    } else {
+      header.classList.remove("active");
+    }
+  });
+});
+
 // フェードイン
 //スクロール時のイベント
 window.addEventListener("scroll", function () {
   //すべての.fadeを取得
   const fade = document.querySelectorAll(".fade");
-
-  // //すべての.itemを取得
-  // const item = document.querySelectorAll(".gallery-item");
-
   for (let i = 0; i < fade.length; i++) {
     //fadeの高さ取得
     var targetTop = fade[i].offsetTop;
 
-    //画面のスクロール量 + 300px > .fadeのoffsetの高さ
-    if (window.scrollY + 300 > targetTop) {
+    //画面のスクロール量 + 500px > .fadeのoffsetの高さ
+    if (window.scrollY + 500 > targetTop) {
       fade[i].classList.add("is-scrollIn");
     }
   }
 });
 
-// Serviceフェードイン
-var slideConts = document.querySelectorAll(".slideConts"); // スライドで表示させる要素の取得
-var slideContsRect = []; // 要素の位置を入れるための配列
-var slideContsTop = []; // 要素の位置を入れるための配列
-var windowY = window.pageYOffset; // ウィンドウのスクロール位置を取得
-var windowH = window.innerHeight; // ウィンドウの高さを取得
-var remainder = 100; // ちょっとはみ出させる部分
+// ウィンドウの高さを取得する
+var window_h = window.innerHeight;
 
-// 要素の位置を取得
-for (var i = 0; i < slideConts.length; i++) {
-  slideContsRect.push(slideConts[i].getBoundingClientRect());
-}
-for (var i = 0; i < slideContsRect.length; i++) {
-  slideContsTop.push(slideContsRect[i].top + windowY);
-}
+// スクロールイベント
+window.addEventListener("scroll", function () {
+  // スクロールの位置を取得する
+  var scroll_top = window.scrollY;
 
-// ウィンドウがリサイズされたら、ウィンドウの高さを再取得
-window.addEventListener("resize", function () {
-  windowH = window.innerHeight;
+  // 各box要素に対して処理を行う
+  var sItems = document.querySelectorAll(".service_item");
+  sItems.forEach(function (sItem) {
+    // 各box要素のtopの位置を取得する
+    var elem_pos = sItem.getBoundingClientRect().top + scroll_top;
+
+    // どのタイミングでフェードインさせるか
+    if (scroll_top >= elem_pos - window_h + 200) {
+      sItem.classList.add("fadein"); // 特定の位置を超えたらクラスを追加
+    }
+  });
 });
 
-// スクロールされたら
-window.addEventListener("scroll", function () {
-  // スクロール位置を取得
-  windowY = window.pageYOffset;
+//制作実績カテゴリー分け
+document.addEventListener("DOMContentLoaded", function () {
+  // 要素を取得
+  var filterList = document.querySelector(".filter_list"),
+    filterItems = document.querySelectorAll(".filter_list [data-filter]"),
+    itemItems = document.querySelectorAll(".filter_item [data-item]");
 
-  for (var i = 0; i < slideConts.length; i++) {
-    // 要素が画面の下端にかかったら
-    if (windowY > slideContsTop[i] - windowH + remainder) {
-      // .showを付与
-      slideConts[i].classList.add("show");
-    } else {
-      // 逆に.showを削除
-      slideConts[i].classList.remove("show");
+  // カテゴリをクリックしたら
+  filterList.addEventListener("click", function (e) {
+    // デフォルトの動作をキャンセル
+    e.preventDefault();
+
+    var target = e.target;
+
+    // クリックした要素またはその親要素が[data-filter]属性を持つ場合のみ処理を続行
+    while (target && !target.hasAttribute("data-filter")) {
+      target = target.parentElement;
     }
-  }
+
+    if (target && target.hasAttribute("data-filter")) {
+      // クリックしたカテゴリにクラスを付与
+      filterItems.forEach(function (item) {
+        item.classList.remove("is-active");
+      });
+      target.classList.add("is-active");
+
+      // クリックした要素のdata属性を取得
+      var filterItem = target.getAttribute("data-filter");
+
+      // データ属性が all なら全ての要素を表示
+      if (filterItem == "all") {
+        itemItems.forEach(function (item) {
+          item.classList.remove("is-active");
+          item.style.display = "none";
+        });
+        itemItems.forEach(function (item) {
+          item.classList.add("is-active");
+          item.style.display = "block";
+        });
+      } else {
+        itemItems.forEach(function (item) {
+          item.classList.remove("is-active");
+          item.style.display = "none";
+        });
+
+        // クリックした要素のdata属性の値と一致する要素を表示
+        var filteredItems = document.querySelectorAll(
+          '[data-item="' + filterItem + '"]'
+        );
+        filteredItems.forEach(function (item) {
+          item.classList.add("is-active");
+          item.style.display = "block";
+        });
+      }
+    }
+  });
 });
 
 // PageTopボタンの動作
@@ -94,7 +145,7 @@ function pageTopAnime() {
       document.getElementById("page-top").style.bottom = "10px"; // 下から10pxの位置にページリンクを指定
     }
   }
-}
+};
 
 // 画面をスクロールをしたら動かしたい場合の記述
 window.addEventListener("scroll", function () {

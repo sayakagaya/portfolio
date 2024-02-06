@@ -2,9 +2,12 @@
 .price_area {
   margin: 0 auto;
 }
+.price_table {
+  width: 100%;
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+}
 .price_table td {
   text-align: center;
-  /* background-color: #fff; */
   padding: 10px;
   position: relative;
 }
@@ -31,6 +34,7 @@
 .plan_standard,
 .plan_premium {
   border-radius: 50px 50px 0px 0px; /* 左上、右上、右下、左下 */
+  width: calc(80% / 3);
 }
 .plan_light {
   background-color: #f7f7b5;
@@ -59,6 +63,9 @@
 }
 .premium::after {
   border-bottom: 2px dotted #71b0ee;
+}
+.reccomend {
+  font-size: clamp(1rem, 0.932rem + 0.34vw, 1.188rem);
 }
 .reccomend_light {
   background-color: #fbfbe8;
@@ -105,4 +112,61 @@
 .reccomend_premium .osusume {
   color: #3a91e7;
   font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+  .price_table {
+    width: 100%;
+    border: 3px solid #efb572;
+    border-radius: 5px;
+  }
+  .price_table .plan_list {
+    display: none;
+  }
+  .price_table tr {
+    width: 100%;
+  }
+  .price_table td {
+    display: block;
+    text-align: right;
+    width: 100%;
+  }
+  .price_table .item {
+    display: block;
+    text-align: right;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    border-radius: 0px;
+    line-height: 50px;
+    background-color: rgb(226, 152, 98);
+    color: #fff;
+  }
+  .price_table td:before {
+    content: attr(data-label);
+    width: 40%;
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .light {
+    background-color: #fbfbe8;
+  }
+  .standard {
+    background-color: #f3ebf6;
+  }
+  .premium {
+    background-color: #dde4ec;
+  }
+
+  .osusume {
+    display: none;
+  }
+  .light::after,
+  .standard::after,
+  .premium::after {
+    display: none;
+  }
 }
