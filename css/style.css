@@ -129,7 +129,7 @@
   width: 100%;
   padding: 50px 0;
 }
-.about_inner{
+.about_inner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -602,12 +602,6 @@ h3::after {
     text-align: center;
     right: 0;
   }
-  .about .container {
-    padding: 0;
-  }
-  .about .container img {
-    height: 50%;
-  }
   .about_img {
     width: 100%;
   }
@@ -615,8 +609,7 @@ h3::after {
     height: 100%;
   }
   .about_txt {
-    width: 100%;
-    padding: 0;
+    width: 80%;
   }
   .about_txt h2 {
     margin-bottom: 20px;
