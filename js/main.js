@@ -145,7 +145,7 @@ function pageTopAnime() {
       document.getElementById("page-top").style.bottom = "10px"; // 下から10pxの位置にページリンクを指定
     }
   }
-};
+}
 
 // 画面をスクロールをしたら動かしたい場合の記述
 window.addEventListener("scroll", function () {
@@ -219,4 +219,6 @@ for (let i = 0; i < anchors.length; i++) {
       });
     }
   });
+
+  
 }

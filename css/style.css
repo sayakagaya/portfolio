@@ -127,11 +127,15 @@
 .about {
   background-color: #fcefda;
   width: 100%;
-  padding: 50px 40px;
+  padding: 50px 0;
+}
+.about_inner{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .about_img_container {
   width: 45%;
@@ -226,7 +230,7 @@
   left: 0;
   margin: auto;
   object-fit: cover;
-  transition: 1s all;
+  transition: 0.3s all;
 }
 .works_img:hover {
   transform: scale(1.1, 1.1);
@@ -251,7 +255,6 @@
   background-color: var(--mainColor);
   color: #fff;
   margin: 0 auto;
-  transition: all 0.3s;
 }
 .works_btn::after {
   display: inline;
@@ -263,12 +266,6 @@
   color: #fff;
   right: 20px;
   transition: all 0.3s;
-}
-
-.works_btn:hover {
-  font-size: 1.125rem;
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
-  border-color: transparent;
 }
 .works_btn:hover::after {
   right: 10px;
@@ -404,14 +401,10 @@ h3::after {
 .detail_btn {
   position: relative;
   width: 100%;
-  top: 0;
   color: var(--mainColor);
   border: 1px solid #fff;
   padding: 15px;
-  border-radius: 30px;
   background-color: #fff;
-  box-shadow: 6px 6px 0px 0px rgba(51, 51, 51, 0.25);
-  transition: all 0.3s;
 }
 .detail_btn::before {
   content: "";
@@ -434,10 +427,10 @@ h3::after {
   transition: all 0.3s;
 }
 
-.detail_btn:hover {
+/* .detail_btn:hover {
   box-shadow: none;
   transform: translate(4px, 4px);
-}
+} */
 .detail_btn:hover::after {
   right: 20px;
 }

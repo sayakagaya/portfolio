@@ -34,6 +34,7 @@ main {
 .filter_list li.is-active {
   /*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
   background-color: var(--mainColor);
+  transition: 0.5s all;
 }
 
 .works_list {
@@ -50,6 +51,7 @@ main {
   position: relative;
   width: 100%;
   overflow: hidden;
+  border-radius: 30px;
 }
 .img_box::before {
   content: "";
@@ -66,7 +68,7 @@ main {
   right: 0;
   object-fit: cover;
   border-radius: 30px;
-  transition: 1s all;
+  transition: 0.3s all;
 }
 .works_img:hover {
   transform: scale(1.1, 1.1);

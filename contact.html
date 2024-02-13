@@ -104,14 +104,19 @@
           デザインのみ、コーディングのみのご依頼も対応可能です。まずはお気軽にお問い合わせください。
         </p>
 
-        <form action="./contactform.php" method="post" name="form">
+        <form
+          action=""
+          method="post"
+          id="submitForm"
+          name="form"
+        >
           <table class="contact_table">
             <tr>
               <th class="contact_item">
                 名前 <span class="required">必須</span>
               </th>
               <td class="contact_body">
-                <input type="text" name="名前" class="form_text" />
+                <input type="text" name="名前" class="form_text" required />
               </td>
             </tr>
             <tr>
@@ -119,7 +124,7 @@
                 メールアドレス <span class="required">必須</span>
               </th>
               <td class="contact_body">
-                <input type="email" name="メールアドレス" class="form_text" />
+                <input type="email" name="メールアドレス" class="form_text" required/>
               </td>
             </tr>
             <tr>
@@ -128,19 +133,19 @@
               </th>
               <td class="contact_body">
                 <label class="contact_type">
-                  <input type="checkbox" name="問い合わせ種別" />
+                  <input type="checkbox" name="問い合わせ種別"/>
                   <span class="contact_type_txt">Webサイト制作</span>
                 </label>
                 <label class="contact_type">
-                  <input type="checkbox" name="問い合わせ種別" />
+                  <input type="checkbox" name="問い合わせ種別"/>
                   <span class="contact_type_txt">更新・運営サポート</span>
                 </label>
                 <label class="contact_type">
-                  <input type="checkbox" name="問い合わせ種別" />
+                  <input type="checkbox" name="問い合わせ種別"/>
                   <span class="contact_type_txt">画像制作</span>
                 </label>
                 <label class="contact_type">
-                  <input type="checkbox" name="問い合わせ種別" />
+                  <input type="checkbox" name="問い合わせ種別"/>
                   <span class="contact_type_txt">その他</span>
                 </label>
               </td>
@@ -152,7 +157,7 @@
               </td>
             </tr>
           </table>
-          <input class="contact_submit" type="submit" value="確認画面へ" />
+          <input class="contact_submit" type="submit" value="送信" />
         </form>
       </div>
     </main>
