@@ -99,15 +99,17 @@ footer p {
   font-size: 0.75rem;
 }
 
-
 /* confirm */
-.complete{
+.complete {
   font-size: 1.5rem;
   margin: 50px 0;
 }
-.confirm_txt{
+.confirm_txt {
   margin-bottom: 50px;
   line-height: 2;
+}
+.confirm_main {
+  height: calc(100vh - 114px);
 }
 
 @media screen and (max-width: 650px) {
