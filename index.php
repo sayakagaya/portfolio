@@ -47,7 +47,7 @@
             </li>
             <li class="nav_item">
               <div class="hd_contact_area">
-                <a href="./php/contactform.php" class="hd_contact_btn">
+                <a href="contact.html" class="hd_contact_btn">
                   <span>COTNTACT</span>
                   <span class="mail_icon">
                     <i class="fas fa-envelope"></i> </span
