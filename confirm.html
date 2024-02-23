@@ -99,93 +99,13 @@
           <span class="en_title">Contact</span>
           <span class="jp_title">お問い合わせ</span>
         </h2>
-        <p>
-          ホームページ・Web制作に関するお問い合わせやお見積もりのご依頼は以下のフォームをご利用ください。<br />
-          デザインのみ、コーディングのみのご依頼も対応可能です。まずはお気軽にお問い合わせください。
-        </p>
 
-        <form
-          name="contact"
-          action="/portfolio/confirm.html"
-          method="POST"
-          netlify
-        >
-          <table class="contact_table">
-            <tr>
-              <th class="contact_item">
-                <label for="name"
-                  >名前　<span class="required">必須</span>
-                </label>
-              </th>
-              <td class="contact_body">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="例：山田　花子"
-                  class="form_text"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <th class="contact_item">
-                <label for="email">
-                  メールアドレス <span class="required">必須</span>
-                </label>
-              </th>
-              <td class="contact_body">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="例：abc@xx.com"
-                  class="form_text"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <th class="contact_item">
-                <label for="kinds">
-                  お問い合わせの種類 <span class="required">必須</span>
-                </label>
-              </th>
-              <td class="contact_body">
-                <label for="website" class="contact_type">
-                  <input type="checkbox" id="website" name="kinds" />
-                  <span class="contact_type_txt">Webサイト制作</span>
-                </label>
-                <label for="support" class="contact_type">
-                  <input type="checkbox" id="support" name="kinds" />
-                  <span class="contact_type_txt">更新・運営サポート</span>
-                </label>
-                <label for="design" class="contact_type">
-                  <input type="checkbox" id="design" name="kinds" />
-                  <span class="contact_type_txt">バナー・広告制作</span>
-                </label>
-                <label for="others" class="contact_type">
-                  <input type="checkbox" id="others" name="kinds" />
-                  <span class="contact_type_txt">その他</span>
-                </label>
-              </td>
-            </tr>
-            <tr>
-              <th class="contact_item">
-                <label for="inquiry">お問い合わせ内容</label>
-              </th>
-              <td class="contact_body">
-                <textarea
-                  id="inquiry"
-                  name="inquiry"
-                  placeholder="空欄可能です"
-                  class="form_textarea"
-                ></textarea>
-              </td>
-            </tr>
-          </table>
-          <button class="contact_btn" type="submit">送信</button>
-        </form>
+        <p class="complete">お問い合わせが完了しました。</p>
+        <p class="confirm_txt">
+          お問い合わせいただきありがとうございます！<br />
+          ２〜３日中にご連絡いたしますので、恐れ入りますがしばらくお待ちください。
+        </p>
+        <a class="contact_btn" href="index.html">TOPに戻る</a>
       </div>
     </main>
     <footer>
